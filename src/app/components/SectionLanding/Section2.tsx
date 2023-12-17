@@ -44,7 +44,7 @@ export default function SectionOne() {
 
   return (
     <>
-      <div className=" min-h-screen mx-36 my-5">
+      <div className=" min-h-screen mx-1 sm:mx-36 my-5">
         <div className=" text-center">
           <div className=" text-center justify-center">
             <p className="badge bg-[#E9D7FE] border-1 text-[#6941C6] ">
@@ -60,7 +60,7 @@ export default function SectionOne() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 text-center">
           {tecnologias.map((tecnologia, index) => (
             <div key={index} className="col-span-1 p-4 rounded-lg">
               <div className="flex py-3 justify-center">

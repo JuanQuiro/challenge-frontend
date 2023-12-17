@@ -9,14 +9,14 @@ export default function App() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="mx-36 mb-32">
+    <div className="mx-10 lg:mx-36 mb-32">
       <h3 className="text-center p-3 text-gray-900 text-3xl font-semibold">
         Frequently asked questions
       </h3>
       <p className="mt-2 text-center mb-5">
         Everything you need to know about the product and billing.
       </p>
-      <Accordion defaultExpandedKeys={["theme"]}>
+      <Accordion>
         <AccordionItem
           key="theme"
           aria-label="Theme"

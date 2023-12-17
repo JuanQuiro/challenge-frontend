@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SectionOne() {
   return (
-    <div className="mx-32 mb-24">
+    <div className="mx-2 lg:mx-32 mb-24">
       <div className="card lg:card-side bg-primary shadow-xl">
         <figure>
           <img src="bannerImg2.png" alt="Album" />

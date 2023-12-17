@@ -3,10 +3,10 @@ import { Button } from "@nextui-org/react";
 
 export default function SectionOne() {
   return (
-    <div className="mx-32 mb-24 my-60 lg:mt-16 lg:direction-alternate-reverse">
+    <div className="mx-5 sm:mx-32 mb-24 my-60 lg:mt-16 ">
       <div className="card lg:card-side bg-primary shadow-xl">
         <div className="card-body ">
-          <h2 className="card-title mt-32 text-3xl text-white">
+          <h2 className="card-title mt-0 lg:mt-32 text-3xl text-white">
             Give us a shot
           </h2>
           <p className="text-white/60">
