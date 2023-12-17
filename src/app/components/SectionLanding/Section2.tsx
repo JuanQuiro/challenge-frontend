@@ -44,7 +44,7 @@ export default function SectionOne() {
 
   return (
     <>
-      <div className=" min-h-screen mx-36">
+      <div className=" min-h-screen mx-36 my-5">
         <div className=" text-center">
           <div className=" text-center justify-center">
             <p className="badge bg-[#E9D7FE] border-1 text-[#6941C6] ">
