@@ -7,7 +7,7 @@ import { ActivityGaugeScreen } from "./utils/RadialProgress/screens/ActivityGaug
 
 export default function SectionOne() {
   return (
-    <div>
+    <div className="mb-80">
       <div className="hero min-h-screen">
         <Card className="hero-content my-5 bg-primary py-56 px-64 text-center">
           <div className="max-w-xl">
@@ -23,8 +23,8 @@ export default function SectionOne() {
               startups.
             </p>
             <span></span>
-            <section className="grid  grid-cols-3">
-              <div className="col-span-2 ml-24">
+            <section className="grid  grid-cols-0 lg:grid-cols-3">
+              <div className="col-span-3 lg:col-span-2 ml-0 lg:ml-24">
                 <Input
                   type="email"
                   label="Email"
@@ -38,8 +38,11 @@ export default function SectionOne() {
                   endContent={<HelpIcon />}
                 />
               </div>
-              <div className="items-center">
-                <Button color="primary" className="bg-[#7E56D9] mt-3">
+              <div className="col-span-3 lg:col-span-1 items-center">
+                <Button
+                  color="primary"
+                  className="bg-[#7E56D9] w-full lg:w-auto mt-3"
+                >
                   Get started
                 </Button>
               </div>
