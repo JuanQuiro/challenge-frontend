@@ -14,26 +14,44 @@ interface Props {
   label: boolean;
 }
 
-export const SizeMdLegendFalseWrapper = ({ size, legend, label }: Props): JSX.Element => {
+export const SizeMdLegendFalseWrapper = ({
+  size,
+  legend,
+  label,
+}: Props): JSX.Element => {
   return (
     <div className={`size-md-legend-false-wrapper ${legend}`}>
       <ActivityGauge
         className="activity-gauge"
-        label={!label ? false : true}
-        size={size === "lg" ? "lg" : size === "sm" ? "sm" : size === "xs" ? "xs" : "md"}
+        label={!!label}
+        size={
+          size === "lg"
+            ? "lg"
+            : size === "sm"
+              ? "sm"
+              : size === "xs"
+                ? "xs"
+                : "md"
+        }
       />
       {["bottom", "right"].includes(legend) && (
         <div className="legend">
           <div className="legend-series">
-            <div className="color">{legend === "right" && <div className="div" />}</div>
+            <div className="color">
+              {legend === "right" && <div className="div" />}
+            </div>
             <div className="text-wrapper">Series 1</div>
           </div>
           <div className="legend-series-2">
-            <div className="color-2">{legend === "right" && <div className="color-3" />}</div>
+            <div className="color-2">
+              {legend === "right" && <div className="color-3" />}
+            </div>
             <div className="text-wrapper">Series 2</div>
           </div>
           <div className="legend-series-3">
-            <div className="color-4">{legend === "right" && <div className="color-5" />}</div>
+            <div className="color-4">
+              {legend === "right" && <div className="color-5" />}
+            </div>
             <div className="text-wrapper">Series 3</div>
           </div>
         </div>

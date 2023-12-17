@@ -37,6 +37,8 @@
     "out/",
     "next.config.js",
     "postcss.config.js",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "src/app/components/SectionLanding/utils/RadialProgress/ActivityGauge/ActivityGauge.stories.js",
+    "src/app/components/SectionLanding/utils/RadialProgress/SizeMdLegendFalseWrapper/SizeMdLegendFalseWrapper.stories.js"
   ]
 }
