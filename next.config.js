@@ -1,11 +1,7 @@
-const { withSentryConfig } = require('@sentry/nextjs');
+const { withSentryConfig } = require("@sentry/nextjs");
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    instrumentationHook: true,
-  },
-};
+const nextConfig = {};
 
 module.exports = withSentryConfig(
   nextConfig,
@@ -15,8 +11,8 @@ module.exports = withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: 'avilatek',
-    project: 'meit-client',
+    org: "avilatek",
+    project: "meit-client",
   },
   {
     // For all available options, see:
@@ -29,7 +25,7 @@ module.exports = withSentryConfig(
     transpileClientSDK: false,
 
     // Routes browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers (increases server load)
-    tunnelRoute: '/monitoring',
+    tunnelRoute: "/monitoring",
 
     // Hides source maps from generated client bundles
     hideSourceMaps: true,

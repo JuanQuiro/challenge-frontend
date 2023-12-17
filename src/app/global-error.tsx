@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import * as Sentry from '@sentry/nextjs';
-import { useEffect } from 'react';
+import * as Sentry from "@sentry/nextjs";
+import { useEffect } from "react";
 
-type Props = {
+interface Props {
   error: Error & { digest?: string };
   reset: () => void;
-};
+}
 
 export default function GlobalError({ error, reset }: Props) {
   useEffect(() => {
@@ -17,7 +17,13 @@ export default function GlobalError({ error, reset }: Props) {
     <html>
       <body>
         <h2>Something went wrong!</h2>
-        <button onClick={() => reset()}>Try again</button>
+        <button
+          onClick={() => {
+            reset();
+          }}
+        >
+          Try again
+        </button>
       </body>
     </html>
   );

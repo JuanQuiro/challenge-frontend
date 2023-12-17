@@ -1,0 +1,1 @@
+export { SizeMdLegendFalseWrapper } from "./SizeMdLegendFalseWrapper";
