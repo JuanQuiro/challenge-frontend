@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <>
-      <footer className="footer p-10 text-base-content">
-        <nav>
+      <footer className="footer  justify-center lg:gap-96 p-10 text-base-content">
+        <nav className="lg:grid hidden">
           <header className="footer-title text-black opacity-80">
             Product
           </header>
@@ -16,7 +16,7 @@ function Footer() {
           <a className="link link-hover text-[#6941C6]">Pricing</a>
           <a className="link link-hover text-[#6941C6]">Releases</a>
         </nav>
-        <nav>
+        <nav className="hidden lg:grid">
           <header className="footer-title text-black opacity-80">
             Company
           </header>
@@ -27,11 +27,118 @@ function Footer() {
           <a className="link link-hover text-[#6941C6]">Media kit</a>
           <a className="link link-hover text-[#6941C6]">Contact</a>
         </nav>
-        <nav className="items-end ml-96 justify-end">
-          <header className="footer-title text-black opacity-80">
+        <div className="sm:w-[375px]  lg:hidden w-[250px] h-60 px-4 flex-col justify-start items-start gap-8 inline-flex">
+          <div className="self-stretch justify-start items-start gap-8 inline-flex">
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch text-gray-900 text-sm font-semibold leading-tight">
+                Product
+              </div>
+              <div className="self-stretch h-[204px] flex-col justify-start items-start gap-3 flex">
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Overview
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Features
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Solutions
+                    </div>
+                  </div>
+                  <div className="px-2 py-0.5 rounded-full border border-violet-500 justify-start items-center flex">
+                    <div className="text-center text-violet-700 text-xs font-medium  leading-[18px]">
+                      New
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Tutorials
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold leading-normal">
+                      Pricing
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold leading-normal">
+                      Releases
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch text-gray-900 text-sm font-semibold  leading-tight">
+                Company
+              </div>
+              <div className="self-stretch h-[204px] flex-col justify-start items-start gap-3 flex">
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold leading-normal">
+                      About us
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Careers
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold leading-normal">
+                      Press
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      News
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Media kit
+                    </div>
+                  </div>
+                </div>
+                <div className="justify-start items-center gap-2 inline-flex">
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-violet-700 text-base font-semibold  leading-normal">
+                      Contact
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav className=" order-first lg:order-last ml-0 lg:ml-0 mr-0  justify-center lg:justify-end">
+          <header className="footer-title text-base text-black opacity-80">
             Get the app
           </header>
-          <div className=" grid gap-2">
+          <div className=" grid grid-cols-2 lg:grid-cols-1  gap-2">
             <a>
               <img src="MobileBadge.svg" />
             </a>
@@ -41,8 +148,8 @@ function Footer() {
           </div>
         </nav>
       </footer>
-      <div className="border-t-1 mx-32"></div>
-      <footer className="footer px-32 py-4">
+      <div className="border-t-1 mx-10 sm:mx-32"></div>
+      <footer className="footer px-5 sm:px-32 py-4">
         <aside className="items-center grid-flow-col">
           <img
             src="/Logo.png"
@@ -50,7 +157,9 @@ function Footer() {
             height={50}
             alt="Picture of the author"
           />
-          <p className="font-bold pl-1  pr-7 text-black">Untitled UI</p>
+          <p className="font-bold text-base pl-1  pr-7 text-black">
+            Untitled UI
+          </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">

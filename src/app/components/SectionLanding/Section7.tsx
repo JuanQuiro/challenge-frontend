@@ -2,14 +2,17 @@ import React from "react";
 
 export default function SectionOne() {
   return (
-    <div className="mx-32 mb-24">
+    <div className="mx-2 sm:mx-32 mb-24 my-60 lg:mt-16 ">
       <div className="card lg:card-side bg-primary shadow-xl">
-        <figure>
-          <img src="bannerImg2.png" alt="Album" />
+        <figure className="bg-black">
+          <img
+            src="/bannerImg2.png"
+            alt="Renee Wells - Product Designer, Quotient"
+          />
         </figure>
         <div className="card-body ">
           <div>
-            <div className="rating mt-20">
+            <div className="rating lg:mt-20">
               <input
                 type="radio"
                 name="rating-2"

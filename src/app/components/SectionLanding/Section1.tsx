@@ -9,7 +9,7 @@ export default function SectionOne() {
   return (
     <div className="mb-80">
       <div className="hero min-h-screen">
-        <Card className="hero-content my-5 bg-primary py-56 px-64 text-center">
+        <Card className="hero-content my-5 bg-primary py-56 px-4 md:px-64 text-center">
           <div className="max-w-xl">
             <h3
               className="text-7xl  bg-clip-text text-transparent bg-gradient-to-t from-gray-400 font-semibold 
@@ -51,14 +51,14 @@ export default function SectionOne() {
         </Card>
       </div>
       <div className="flex justify-center items-center">
-        <div className="card bg-white w-3/6 p-3  shadow-xl absolute z-10">
+        <div className="card bg-white w-full sm:w-3/6 p-3  shadow-xl absolute z-10">
           <div className="py-2 pl-2">
             <h2 className="font-semibold">Users over time</h2>
           </div>
           <figure>
             <Image src={table} alt="Shoes" />
             <div className="absolute bottom-[-30px] right-0 z-20">
-              <ActivityGaugeScreen />;
+              <ActivityGaugeScreen />
             </div>
           </figure>
         </div>
